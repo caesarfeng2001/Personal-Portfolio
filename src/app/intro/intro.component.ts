@@ -6,14 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent implements OnInit {
-  rcafLogo: string;
-  safutureLogo: string;
-  txt = "Hello, I'm Caesar."; 
+  txt = "Welcome to my website!"; 
   display = "";
+  me : string;
+
   constructor() {
-    this.rcafLogo = "/assets/company_logos/RCAF.jpg";
-    this.safutureLogo = "/assets/company_logos/safuture.png";
-   }
+    this.me = "/assets/company_logos/me.jpg";
+  }
  
   typeWriter(that) {
     let total_length = that.txt.length;

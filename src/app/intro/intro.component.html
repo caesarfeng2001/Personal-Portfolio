@@ -1,62 +1,15 @@
 <div id="intro">
-    <h1>{{ display }} </h1>
-    <h3 class="fade-in" id="intro-h3">Welcome to my website!</h3>
-    <div id="page-body">
-        <div class="row">
-        <!-- developped so we can add flex items laer-->
-            <div class="col-md-9">
-                <h2><span id="about"></span> About Me </h2>
-                <p> My name is Caesar. I am currently a 2nd year student at the University of Waterloo 
-                    pursuing a double major degree in Computer Science and Finance. I am also seeking software internship
-                    opportunities for 2021, so please feel free to contact me with any related information. 
-                </p>
-                <p>
-                    I have a passion for software development and building applications that contribute towards ameliorating 
-                    our world. You can take a look at my resume (add link later) and the rest of my website for an 
-                    idea of the technologies I work with and my experience in the industry thus far. 
-                </p>
-                <p>
-                    When I'm not focused on my studies or development, you will most likely find me in the gym either playing
-                    basketball or weightlifting. I'm also a big fan of reading as I feel that it is one of the best ways to 
-                    learn new things. 
-                </p>
-            </div>
+    <div class="introContainer">
+        
+        <div class="introTextBox">
+            <h2>Hello, my name is</h2>
+            <h1 class="introText">Caesar Feng </h1>
+            <h3>{{ display }}</h3>
         </div>
-        <div class="row-second">
-            <div class="col-md-9 anchor">
-                <h2><span id="experience"></span>Experience</h2>
-                <div class="tabs">
-                    <div class="tab1">
-                        <div>
-                            <img class="tab-image" [src]="rcafLogo" alt="Image">
-                        </div>
-                        <div class="company-title">
-                            <h3 style="font-weight: bold;">Royal Canadian Air Force</h3>
-                            <h3 style="color: #41B285">Full Stack Developer</h3>
-                        </div>
-                        
-                    </div>
-                    <div class ="tab1">
-                        <div>
-                            <img class="tab-image" [src]="safutureLogo" alt="Image">
-                        </div>
-                        <div class="company-title">
-                            <h3 style="font-weight: bold;">SaFuture Inc.</h3>
-                            <h3 style="color: #41B285">Software Engineer</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="introImage">
+            <img class="tab-image" [src]="me" alt="Image">
         </div>
-        <div class="row-second">
-            <div class="col-md-9 anchor">
-                <h2><span id="projects"></span>Projects</h2>
-            </div>
-        </div>
-        <div class="row-second">
-            <div id="contact" class="col-md-9">
-                <h2>Contact</h2>
-            </div>
-        </div>
+        
     </div>
+    
 </div>
