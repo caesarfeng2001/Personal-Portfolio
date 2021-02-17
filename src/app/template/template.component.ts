@@ -9,11 +9,10 @@ export class TemplateComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-   this.stickyFunction();
   }
 
-
-  myFunction() {
+/*
+  convertNavbar() {
     var x = document.getElementById("my-nav-list");
     if (x.className === "nav-list") {
       x.className += " responsive";
@@ -21,6 +20,7 @@ export class TemplateComponent implements OnInit {
       x.className = "nav-list";
     }
   }
+  
 
   stickyFunction() {
     let navbar = document.getElementById("navbar");
@@ -31,4 +31,6 @@ export class TemplateComponent implements OnInit {
       navbar.classList.remove("sticky");
     }
   }
+  */
 }
+

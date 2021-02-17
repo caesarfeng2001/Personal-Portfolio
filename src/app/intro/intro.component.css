@@ -28,8 +28,6 @@ background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, F
 }
 
 
-
-
 h1 {
     font-size: 5vw;
 }
@@ -40,14 +38,24 @@ h1 {
 
 
 h3 {
-    font-size: 200%;
+    font-size: 3vw;
     color: white;
 }
 
 h2 {
-    font-size: 250%;
+    font-size: 2vw;
     color:white;
 }
+
+@media (max-height: 400px) {
+  .introTextBox {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
 
 
 #page-body {

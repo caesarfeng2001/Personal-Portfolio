@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent implements OnInit {
-  txt = "Welcome to my website!"; 
+  txt = "I am a happy guy"; 
   display = "";
   me : string;
 
