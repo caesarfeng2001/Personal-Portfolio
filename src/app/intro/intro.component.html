@@ -1,14 +1,12 @@
 <div id="intro">
+    <app-template [introHeight]=introHeight></app-template>
     <div class="introContainer">
-        
         <div class="introTextBox">
             <h2>Hello, my name is</h2>
-            <h1 class="introText">Caesar Feng </h1>
-            <h3>{{ display }}</h3>
+            <h1 class="introText">Caesar <span id="lastName">Feng</span> </h1>
+            <h3>I am <span id="text"></span><span id="cursor"></span></h3>
         </div>
-        <div class="introImage">
-            <img class="tab-image" [src]="me" alt="Image">
-        </div>
+        
         
     </div>
     

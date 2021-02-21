@@ -1,10 +1,13 @@
 #intro {
     width:100vw;
     height: 100vh;
-    background: #de6161;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: rgb(222,209,189);
+background: linear-gradient(to right, rgba(222,209,189,1) 0%, rgba(250,246,242,1) 95%);
+    /*
+    background: #de6161;  
+background: -webkit-linear-gradient(to right, #2657eb, #de6161);  
+background: linear-gradient(to right, #2657eb, #de6161); 
+*/
 }
 
 .introContainer {
@@ -23,37 +26,67 @@ background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, F
   .introTextBox {
     width: 80vw;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
+    color: #5d3b1a;
+  }
+  
+  h1 {
+    font-size: 5vw;
+  }
+  h2, h3 {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  .introTextBox {
+    position: absolute;
+    width: 55vw;
+    text-align: center;
+    color: #5d3b1a;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h3, h2 {
+    font-size: 1rem;
   }
 }
 
-
-h1 {
-    font-size: 5vw;
+#lastName {
+  color: #ab8b79;
 }
 
-.introText {
-  color: white;
-}
-
-
-h3 {
-    font-size: 3vw;
-    color: white;
-}
-
-h2 {
-    font-size: 2vw;
-    color:white;
-}
 
 @media (max-height: 400px) {
   .introTextBox {
-    color: #fff;
     font-weight: 400;
     font-size: 1rem;
-    text-align: left;
+    text-align: center;
   }
+}
+
+#text {
+	display: inline-block;
+	color: #ab8b79;
+	letter-spacing: 2px;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: #ab8b79;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: #ab8b79; 
+	}
 }
 
 
@@ -72,15 +105,6 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
-.row-second {
-    padding-top: 10%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
 
 p { 
     display: block;
@@ -181,3 +205,4 @@ p {
       opacity:1;
     }
 }
+
