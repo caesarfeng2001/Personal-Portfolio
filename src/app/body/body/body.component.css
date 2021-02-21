@@ -1,45 +1,32 @@
-#intro {
-    padding-top: 20%;
-    width:100%;
-}
 
-h1 {
-    vertical-align: middle;
-    text-align: center;
-    font-size: 320%;
-}
-
-
-#intro-h3 {
-    vertical-align: middle;
-    text-align: center;
-    font-size: 200%;
-    color: #41B285;
-}
 
 h2 {
     font-size: 250%;
     position: relative;
     color: #41B285;
 }
-h2 span {
-    position: absolute;
-    top: -100px;
-}
 
 #page-body {
-    width: 80%;
+    padding-top: 4rem;
     text-align: justify;
     margin: 0 auto;
-    padding-top: 8vh;
+    width:100vw;
+    
+    background:#FDF8F5;
 }
 
-.row {
-    padding-top: 25%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.box-shadow-full {
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
 }
 
 .row-second {
@@ -48,6 +35,8 @@ h2 span {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width:100vw;
+    background:#EAE7DC;
 }
 
 
